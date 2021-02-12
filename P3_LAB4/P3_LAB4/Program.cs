@@ -53,6 +53,7 @@ Jeśli poszukiwana książka istnieje, wypisz użytkownikowi gdzie się znajduje
         static void Main(string[] args)
         {
 
+
             Ksiazka testowa = new Ksiazka();
             bool istnieje = false;
             Console.WriteLine("Podaj dowolnego autora badz tytul ksiazki do wyszukania", Environment.NewLine);
@@ -61,13 +62,13 @@ Jeśli poszukiwana książka istnieje, wypisz użytkownikowi gdzie się znajduje
             Ksiazka[,,] tablica = new Ksiazka[3, 6, 10];
 
 
-            for (int Nr = 0; Nr < 3; Nr++)
+            for (int NumR = 0; NumR < 3; NumR++)
             {
-                for (int Np = 0; Np < 6; Np++)
+                for (int NumP = 0; NumP < 6; NumP++)
                 {
-                    for (int Nm = 0; Nm < 10; Nm++)
+                    for (int NumM = 0; NumM < 10; NumM++)
                     {
-                        testowa = new Ksiazka(Nr, Np, Nm);
+                        testowa = new Ksiazka(NumR, NumP, NumM);
                         testowa.Autor = "Walter Isaacson";
                         testowa.Tytul = "Innowatorzy";
 
